@@ -1,0 +1,41 @@
+[MASTER]
+ignore=venv,build,dist
+jobs=1
+load-plugins=pylint.extensions.docparams
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  # Missing module docstring
+    C0115,  # Missing class docstring
+    C0116,  # Missing function or method docstring
+    C0301,  # Line too long
+    C0304,  # Final newline missing
+    C0303,  # Trailing whitespace
+    W0611,  # Unused import
+    R0903,  # Too few public methods
+    R0902,  # Too many instance attributes
+    W0707,  # raise-missing-from
+    W1203,  # logging-fstring-interpolation
+    W0718,  # Catching too general exception Exception
+
+[REPORTS]
+output-format=colorized
+reports=no
+score=yes
+
+[BASIC]
+good-names=i,j,k,e,ex,Run,_,pk,id
+variable-rgx=[a-z_][a-z0-9_]{1,30}$
+argument-rgx=[a-z_][a-z0-9_]{1,30}$
+attr-rgx=[a-z_][a-z0-9_]{1,30}$
+class-rgx=[A-Z_][a-zA-Z0-9]+$
+function-rgx=[a-z_][a-z0-9_]{1,30}$
+const-rgx=(([A-Z_][A-Z0-9_]*)|(__.*__))$
+inlinevar-rgx=[A-Za-z_][A-Za-z0-9_]*$
+
+[TYPECHECK]
+ignored-modules=requests,bs4
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
