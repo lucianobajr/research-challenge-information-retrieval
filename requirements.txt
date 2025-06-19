@@ -1,0 +1,4 @@
+tqdm==4.67.1
+pyterrier==0.1.5
+pandas==2.2.3
+python-terrier==0.13.0

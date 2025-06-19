@@ -1,4 +1,6 @@
 run:
-	python3 -B indexer.py -m 1024 -c ./corpus/corpus_10pct.jsonl -i ./index
+	python3 -B src/entity_search.py
+v2:
+	python3 -B src/v2.py
 lint:
 	pylint --rcfile=.pylintrc $(shell find . -type f -name "*.py" -not -path "*/.*" -not -path "*/venv/*")
