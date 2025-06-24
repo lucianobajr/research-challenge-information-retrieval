@@ -175,4 +175,10 @@ cython_debug/
 
 data/*
 
+dense_index/*
+embeddings/*
+expanded_indexes/*
 indexes/*
+
+indexes_*/*
+out/*
