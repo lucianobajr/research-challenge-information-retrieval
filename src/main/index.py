@@ -1,4 +1,3 @@
-import os
 import json
 import time
 import logging
@@ -11,7 +10,9 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from multiprocessing import Pool, cpu_count
 
-from constants.paths import CORPUS_PATH, INDEX_OUTPUT_DIR
+CORPUS_PATH = './data/corpus.jsonl'
+
+INDEX_OUTPUT_DIR = './indexes'
 
 # Downloads iniciais
 nltk.download('punkt')
